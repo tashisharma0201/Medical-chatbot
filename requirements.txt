@@ -1,10 +1,15 @@
-sentence-transformers==2.2.2
-langchain
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 flask
-pypdf
 python-dotenv
-pinecone[grpc]
+
+langchain
+langchain-community
 langchain-pinecone
-langchain_community
-langchain_openai
-langchain_experimental
+langchain-experimental
+
+pinecone[grpc]
+pypdf
+
+sentence-transformers==2.2.2
+torch==2.1.2+cpu

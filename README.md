@@ -1,1 +1,43 @@
-# Medical-chatbot
+# 🩺 MediTalk – AI-Powered Medical Assistant
+
+MediTalk is a **multilingual AI medical assistant** that helps users understand
+health conditions, symptoms, first aid, and medical concepts using **trusted medical
+encyclopedia data**.  
+It supports **text + voice input**, **spoken responses**, and **real-time chat UI**.
+
+
+## ✨ Features
+
+- 💬 Real-time chat interface (responsive for mobile & desktop)
+- 🎤 Voice input (Speech-to-Text)
+- 🔊 Text-to-Speech (bot speaks answers)
+- 📚 RAG-based answers using medical PDFs
+- 🔍 Semantic search using Pinecone Vector DB
+- ⚡ Fast and lightweight UI
+- 🧠 Context-aware medical responses
+
+
+## 🏗️ Tech Stack
+
+**Frontend**
+- HTML, CSS, JavaScript
+- Web Speech API (Voice Input & Output)
+
+**Backend**
+- Flask (Python)
+- LangChain
+- Sentence Transformers (CPU)
+- Pinecone (Vector Database)
+
+**AI / NLP**
+- HuggingFace sentence-transformers
+- Groq / OpenAI (optional LLM backend)
+
+## 🚀 How It Works
+
+1. Medical PDFs are loaded and split into chunks
+2. Text is converted into embeddings using Sentence Transformers
+3. Embeddings are stored in Pinecone
+4. User query → relevant chunks retrieved
+5. LLM generates a safe, concise response
+6. Answer is shown and optionally spoken aloud
